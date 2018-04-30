@@ -1,0 +1,28 @@
+{
+  "name": "improved-beer-container-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathakdarshana/Improved-Beer-Container-Dashboard.git"
+  },
+  "author": "Darshana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pathakdarshana/Improved-Beer-Container-Dashboard/issues"
+  },
+  "homepage": "https://github.com/pathakdarshana/Improved-Beer-Container-Dashboard#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongodb": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
