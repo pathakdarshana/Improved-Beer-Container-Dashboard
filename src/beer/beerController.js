@@ -17,8 +17,6 @@ router.get('/beerdata', function(req,res){
 });
 
 router.post('/addbeer', function(req,res){
-	console.log('----->', req.body.beerType);
-	console.log(req.body.maxTemperature);
 	Beer.create({
 		beerType: req.body.beerType,
 		maxTemperature: req.body.maxTemperature
@@ -31,5 +29,22 @@ router.post('/addbeer', function(req,res){
 		}
 	});
 });
+
+router.delete('/beerdata/:beertype/removebeer', function(req,res){
+	const beer = req.params.beertype
+	console.log(req.params.beertype)
+	Beer.remove({ "beerType" : beer }, function(err,removed){
+		if (err) {
+			res.send("An error occured")
+		} else {
+			res.send("Removed successfully")
+		}
+	});
+});
+
+
+
+
+
 
 module.exports = router;
